@@ -8,20 +8,53 @@
 			<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 		</head>
 		<body>
-
 			<div class="navbar">
-  			<a href="/">Home</a>
-  			<a href="/about">About me</a>
-  			<a href="/Research">Research</a>
-  			<a href="/Blog">Blog</a>
-				<!-- Load font awesome icons -->
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  			<a href="https://www.facebook.com/mingtweii" class="right",class="facebook"><i class="fa fa-facebook"></i></a>
-  			<a href="https://twitter.com/MingTWeii" class="right",class="twitter"><i class="fa fa-twitter"></i></a>
-  			<a href="https://www.linkedin.com/in/mingtweii/" class="right",class="linkedin"><i class="fa fa-linkedin"></i></a>
+			  <a href="/">Home</a>
+			  <a href="/Research">Research</a>
+			  <a href="/Blog">Blog</a>
+				<a href="/links">Links</a>
+			  <!-- Load font awesome icons -->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			  <a href="https://www.facebook.com/mingtweii" class="right",class="facebook"><i class="fa fa-facebook"></i></a>
+			  <a href="https://twitter.com/MingTWeii" class="right",class="twitter"><i class="fa fa-twitter"></i></a>
+			  <a href="https://www.linkedin.com/in/mingtweii/" class="right",class="linkedin"><i class="fa fa-linkedin"></i></a>
 			</div>
 
+	<div class="container">
+		<h1>test pagination</h1>
+<p class="meta">14 Nov 2019</p>
 
+<!-- Just some nice to have styles for the pager buttons -->
+<style>
+  ul.pager { text-align: center; list-style: none; }
+  ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: 5px;}
+</style>
+
+<div class="post">
+
+  <h1 class="page-heading">Posts</h1>
+  
+  <p>See if the pagination works.</p>
+
+
+  <ul class="post-list">
+    <!-- 
+        Here is the main paginator logic called.
+        All calls to site.posts should be replaced by paginator.posts 
+    -->
+    
+  </ul>
+  
+  <!-- 
+    Showing buttons to move to the next and to the previous list of posts (pager buttons).
+  -->
+  
+
+  <p class="rss-subscribe">subscribe <a href="/blog/atom.xml">via RSS</a></p>
+
+</div>
+
+	</div>
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -83,49 +116,34 @@ body {
   color: white;
 }
 
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
 </style>
-			<div class="container">
-
-			<h1>test pagination</h1>
-<p class="meta">14 Nov 2019</p>
-
-<!-- Just some nice to have styles for the pager buttons -->
-<style>
-  ul.pager { text-align: center; list-style: none; }
-  ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: 5px;}
-</style>
-
-<div class="post">
-
-  <h1 class="page-heading">Posts</h1>
-  
-  <p>See if the pagination works.</p>
-
-
-  <ul class="post-list">
-    <!-- 
-        Here is the main paginator logic called.
-        All calls to site.posts should be replaced by paginator.posts 
-    -->
-    
-  </ul>
-  
-  <!-- 
-    Showing buttons to move to the next and to the previous list of posts (pager buttons).
-  -->
-  
-
-  <p class="rss-subscribe">subscribe <a href="/blog/atom.xml">via RSS</a></p>
-
-</div>
-
-
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:mingtsoweii@gmail.com">email</a></li>
-	        		<!-- <li><a href="https://github.com/mingweii">github.com/mingweii</a></li> -->
-				</ul>
-			</footer>
 		</body>
 	</html>
