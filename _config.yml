@@ -1,18 +1,16 @@
-theme: jekyll-theme-time-machine
-title: Ming Site Test
-description: Test
-url:                 'https://mingweii.github.io'
+theme: jekyll-theme-cayman
+#url:                 'https://mingweii.github.io'
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: A Quantum Lover
+email: mingtsoweii@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm an experimental condensed matter physicist.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mingtweii
 github_username:  mingweii
 

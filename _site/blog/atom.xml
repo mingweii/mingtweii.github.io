@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-09T16:40:32-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">A Quantum Lover</title><subtitle>I'm an experimental condensed matter physicist.</subtitle><entry><title type="html">My personal site finally launched</title><link href="http://localhost:4000/blog/2019/11/14/mingweii-site-launched" rel="alternate" type="text/html" title="My personal site finally launched" /><published>2019-11-14T00:00:00-05:00</published><updated>2019-11-14T00:00:00-05:00</updated><id>http://localhost:4000/blog/2019/11/14/mingweii-site-launched</id><content type="html" xml:base="http://localhost:4000/blog/2019/11/14/mingweii-site-launched">&lt;p&gt;It’s my first time building my website with &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; and &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. This is my first post!&lt;/p&gt;</content><author><name></name></author><summary type="html">It’s my first time building my website with Github pages and Jekyll. This is my first post!</summary></entry><entry><title type="html">test pagination</title><link href="http://localhost:4000/blog/2019/11/14/test-paginate" rel="alternate" type="text/html" title="test pagination" /><published>2019-11-14T00:00:00-05:00</published><updated>2019-11-14T00:00:00-05:00</updated><id>http://localhost:4000/blog/2019/11/14/test-paginate</id><content type="html" xml:base="http://localhost:4000/blog/2019/11/14/test-paginate">&lt;p&gt;See if the pagination works.&lt;/p&gt;</content><author><name></name></author><summary type="html">See if the pagination works.</summary></entry><entry><title type="html">Geography of Minneapolis</title><link href="http://localhost:4000/blog/2016/11/20/sample-post" rel="alternate" type="text/html" title="Geography of Minneapolis" /><published>2016-11-20T13:16:49-05:00</published><updated>2016-11-20T13:16:49-05:00</updated><id>http://localhost:4000/blog/2016/11/20/sample-post</id><content type="html" xml:base="http://localhost:4000/blog/2016/11/20/sample-post">&lt;p&gt;&lt;em&gt;From Wikipedia, the free encyclopedia&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Ming-Tso Wei's Blog</title>
+	<link href="http://mingweii.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://mingweii.github.io/blog"/>
+	<updated>2020-09-09T16:40:32-04:00</updated>
+	<id>http://mingweii.github.io/blog</id>
+	<author>
+		<name>Ming-Tso Wei</name>
+		<email>mingtsoweii@gmail.com</email>
+	</author>
+
+	
+		<entry>
+			<title>test pagination</title>
+			<link href="http://mingweii.github.io/blog/2019/11/14/test-paginate"/>
+			<updated>2019-11-14T00:00:00-05:00</updated>
+			<id>http://mingweii.github.io/blog/2019/11/14/test-paginate</id>
+			<content type="html">&lt;p&gt;See if the pagination works.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>My personal site finally launched</title>
+			<link href="http://mingweii.github.io/blog/2019/11/14/mingweii-site-launched"/>
+			<updated>2019-11-14T00:00:00-05:00</updated>
+			<id>http://mingweii.github.io/blog/2019/11/14/mingweii-site-launched</id>
+			<content type="html">&lt;p&gt;It’s my first time building my website with &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; and &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. This is my first post!&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Geography of Minneapolis</title>
+			<link href="http://mingweii.github.io/blog/2016/11/20/sample-post"/>
+			<updated>2016-11-20T13:16:49-05:00</updated>
+			<id>http://mingweii.github.io/blog/2016/11/20/sample-post</id>
+			<content type="html">&lt;p&gt;&lt;em&gt;From Wikipedia, the free encyclopedia&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Minneapolis is the largest city in the state of Minnesota in the United States, and the county seat of Hennepin County.&lt;/p&gt;
 
@@ -19,4 +56,10 @@
 &lt;h3 id=&quot;waterfalls&quot;&gt;Waterfalls&lt;/h3&gt;
 &lt;p&gt;The area now occupied by the Twin Cities generally consisted of a 155 foot (47 m) thick layer of St. Peter Sandstone, under a 16 foot (5 m) thick layer of shale, under a 35 foot (11 m) thick layer of Platteville limestone.[4] These layers were the result of an Ordovician Period sea which covered east-central Minnesota 500 million years ago.[4] The hard limestone cap was formed from fossilized shell fish. About 20,000 years ago, the area was covered by the Superior Lobe of the Laurentide ice sheet, which left the St. Croix moraine on the Twin Cities as it receded.[4] Later the Grantsburg Sublobe of the Des Moines Lobe also covered the area.[5] Under these vast layers of ice, tunnel valleys were formed, cutting through the limestone layer with tremendous force, to release ice meltwater and glacier effluence.[6] The result was a series of troughs in the limestone, which were filled by glacial till and outwash deposit as the glaciers receded. Sometimes the sediment would be mixed with huge chunks of ice, which would leave voids in the soil. These voids created basins for the Twin Cities Lakes, such as Harriet and Lake Calhoun.[6] Connecting the city lakes in several north-south arteries are gorges cut through the bedrock, but filled with sand and sediment.&lt;/p&gt;
 
-&lt;p&gt;When River Warren Falls receded past the confluence of the much smaller Upper Mississippi River, a new waterfall was created where that river entered the much-lower glacial River Warren. The new falls also receded upstream on the Mississippi, migrating eight miles (12875 m) over 9600 years to where Louis Hennepin first saw it and named St. Anthony Falls in 1680. Due to its value as a power source, this waterfall determined the location of Minneapolis. One branch of the river coming from the west, Minnehaha Creek receded only a few hundred yards from one of the channels of the Mississippi. Minnehaha Falls remains as a picturesque and informative relic of River Warren Falls, and the limestone-over-sandstone construction is readily apparent in its small gorge.&lt;/p&gt;</content><author><name></name></author><summary type="html">From Wikipedia, the free encyclopedia</summary></entry></feed>
+&lt;p&gt;When River Warren Falls receded past the confluence of the much smaller Upper Mississippi River, a new waterfall was created where that river entered the much-lower glacial River Warren. The new falls also receded upstream on the Mississippi, migrating eight miles (12875 m) over 9600 years to where Louis Hennepin first saw it and named St. Anthony Falls in 1680. Due to its value as a power source, this waterfall determined the location of Minneapolis. One branch of the river coming from the west, Minnehaha Creek receded only a few hundred yards from one of the channels of the Mississippi. Minnehaha Falls remains as a picturesque and informative relic of River Warren Falls, and the limestone-over-sandstone construction is readily apparent in its small gorge.&lt;/p&gt;
+
+</content>
+		</entry>
+	
+
+</feed>
