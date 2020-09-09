@@ -4,7 +4,7 @@
 	<title>Ming-Tso Wei's Blog</title>
 	<link href="http://mingweii.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://mingweii.github.io/blog"/>
-	<updated>2019-11-14T18:26:24-05:00</updated>
+	<updated>2020-09-09T15:28:59-04:00</updated>
 	<id>http://mingweii.github.io/blog</id>
 	<author>
 		<name>Ming-Tso Wei</name>
@@ -14,27 +14,27 @@
 	
 		<entry>
 			<title>test pagination</title>
-			<link href="http://mingweii.github.io/blog/2019/11/14/test-paginate"/>
+			<link href="http://mingweii.github.io/2019/11/14/test-paginate.html"/>
 			<updated>2019-11-14T00:00:00-05:00</updated>
-			<id>http://mingweii.github.io/blog/2019/11/14/test-paginate</id>
+			<id>http://mingweii.github.io/2019/11/14/test-paginate</id>
 			<content type="html">&lt;p&gt;See if the pagination works.&lt;/p&gt;
 </content>
 		</entry>
 	
 		<entry>
 			<title>My personal site finally launched</title>
-			<link href="http://mingweii.github.io/blog/2019/11/14/mingweii-site-launched"/>
+			<link href="http://mingweii.github.io/2019/11/14/mingweii-site-launched.html"/>
 			<updated>2019-11-14T00:00:00-05:00</updated>
-			<id>http://mingweii.github.io/blog/2019/11/14/mingweii-site-launched</id>
+			<id>http://mingweii.github.io/2019/11/14/mingweii-site-launched</id>
 			<content type="html">&lt;p&gt;It’s my first time building my website with &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; and &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. This is my first post!&lt;/p&gt;
 </content>
 		</entry>
 	
 		<entry>
 			<title>Geography of Minneapolis</title>
-			<link href="http://mingweii.github.io/blog/2016/11/20/sample-post"/>
+			<link href="http://mingweii.github.io/wikipedia/2016/11/20/sample-post.html"/>
 			<updated>2016-11-20T13:16:49-05:00</updated>
-			<id>http://mingweii.github.io/blog/2016/11/20/sample-post</id>
+			<id>http://mingweii.github.io/wikipedia/2016/11/20/sample-post</id>
 			<content type="html">&lt;p&gt;&lt;em&gt;From Wikipedia, the free encyclopedia&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Minneapolis is the largest city in the state of Minnesota in the United States, and the county seat of Hennepin County.&lt;/p&gt;
