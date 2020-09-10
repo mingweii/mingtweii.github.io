@@ -3,15 +3,18 @@
 
 	<html>
 		<head>
+			{% if site.google_analytics%} <!--and jekyll.environment == 'production'-->
+		  {% include analytics.html %}
+		  {% endif %}
 			<title>{{ site.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 			<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-			{% if site.google_analytics and jekyll.environment == 'production' %}
-		  {% include analytics.html %}
-		  {% endif %}
 		</head>
 		<body>
+			<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B5FNKC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
 			<div class="navbar">
 			  <a href="/">Home</a>
 			  <a href="/Research">Research</a>
@@ -23,10 +26,10 @@
 			    <h1>Ming-Tso Wei (<span lang="cn">魏銘佐</span>)</h1>
 			    <h2>About Me</h2>
 			    <img src="/images/My_photo.jpg" alt="My_photo" width="320">
-
-			    <p>I am currently a postdoctoral researcher in
+						{{site.description}}
+			<!--    <p>I am currently a postdoctoral researcher in
 			    <a href="https://groups.jqi.umd.edu/williams/">Prof. James Williams group</a>
-			     at Joint Quantum Institute, University of Maryland, College Park.</p>
+			     at Joint Quantum Institute, University of Maryland, College Park.</p> -->
 			    <h4>Contact information:</h4>
 							<!-- Load font awesome icons-->
 							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,11 +38,13 @@
 
 							<a href="mailto:" ><i class="fas fa-envelope"></i> &nbsp;mtwei_at_umd.edu</a><br>
 					<h4>Other Links:</h4>
-							<a href="https://www.linkedin.com/in/mingtweii/" ><i class="fa fa-linkedin"></i> &nbsp;LinkedIn</a><br>
+							<a href="https://www.linkedin.com/in/mingtweii/"><i class="fa fa-linkedin"></i> &nbsp;LinkedIn</a><br>
 							<a href="https://scholar.google.com/citations?user=KKX8Ii8AAAAJ&hl=en" ><i class="ai ai-google-scholar-square ai"></i> &nbsp;Google Scholar</a><br>
-							<a href="https://orcid.org/0000-0002-2279-3721" ><i class="fab fa-orcid"></i> &nbsp;ORCID</a><br>
-							<a href="https://twitter.com/MingTWeii" ><i class="fa fa-twitter"></i> &nbsp;Twitter</a><br>
-			  </div>
+							<a href="https://orcid.org/0000-0002-2279-3721"><i class="fab fa-orcid"></i> &nbsp;ORCID</a><br>
+							<a href="https://github.com/mingweii"><i class="fab fa-github"></i> &nbsp;GitHub</a><br>
+							<a href="https://twitter.com/MingTWeii"><i class="fa fa-twitter"></i> &nbsp;Twitter</a><br>
+
+				</div>
 			  <div class="main">
 					<div class="blurb" style="margin-left:2%; margin-right:2%;">
 							{{content}}
