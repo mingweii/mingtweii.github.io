@@ -3,11 +3,13 @@
 
 	<html>
 		<head>
-			<title>{{ page.title }}</title>
+			<title>{{ site.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 			<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+			{% if site.google_analytics and jekyll.environment == 'production' %}
+		  {% include analytics.html %}
+		  {% endif %}
 		</head>
 		<body>
 			<div class="navbar">
@@ -45,8 +47,11 @@
 			  </div>
 			</div>
 			<footer>
+				<span class="site-footer-credits">This website was created by <a href="https://pages.github.com">GitHub Pages</a> and <a href="http://jekyllrb.com">Jekyll </a>
+						@ <script>document.write( new Date().getFullYear());</script>.</span>
+<!--
 				Website created by <a href="https://pages.github.com/" >Github Pages</a> and <a href="http://jekyllrb.com">Jekyll </a>@ <script>document.write( new Date().getFullYear());</script>
-			</footer>
+-->			</footer>
 
 
 <style>

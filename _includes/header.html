@@ -18,16 +18,19 @@
             my_page.autogen is populated by the pagination logic for all pages
                             that are automatically created by the gem. Check for non-existence to exclude pagination pages from site.pages iterators
           -->
-          
+
         {% for my_page in site.pages %}
           {% if my_page.title and my_page.autogen == nil %}
           <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
+
+        {% if site.google_analytics and jekyll.environment == 'production' %}
+          {% include analytics.html %}
+        {% endif %}
       </div>
     </nav>
 
   </div>
 
 </header>
-

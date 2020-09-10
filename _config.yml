@@ -5,7 +5,7 @@ url:                 'https://mingweii.github.io'
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: A Quantum Lover
+title: Ming-Tso Wei
 email: mingtsoweii@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm an experimental condensed matter physicist.
@@ -18,7 +18,7 @@ google_analytics: UA-177608854-1
 
 # Build settings
 markdown: kramdown
-#theme: jekyll-theme-cayman
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
@@ -28,11 +28,11 @@ plugins_dir:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
 #   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
