@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
 url:                 'https://mingweii.github.io'
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -18,7 +18,7 @@ google_analytics: UA-177608854-1
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 

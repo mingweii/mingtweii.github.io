@@ -13,13 +13,13 @@ layout: default
 <div class="post">
 
   <h1 class="page-heading">Posts</h1>
-  
+
   {{ content }}
 
   <ul class="post-list">
-    <!-- 
+    <!--
         Here is the main paginator logic called.
-        All calls to site.posts should be replaced by paginator.posts 
+        All calls to site.posts should be replaced by paginator.posts
     -->
     {% for post in paginator.posts %}
       <li>
@@ -31,8 +31,8 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  
-  <!-- 
+
+  <!--
     Showing buttons to move to the next and to the previous list of posts (pager buttons).
   -->
   {% if paginator.total_pages > 1 %}
@@ -50,6 +50,6 @@ layout: default
   </ul>
   {% endif %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/blog/atom.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/blog/atom.xml" | relative_url }}">via RSS <i class="fa fa-rss" aria-hidden="true"></i></a></p>
 
 </div>
