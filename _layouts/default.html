@@ -3,6 +3,9 @@
 
 	<html>
 		<head>
+			<!-- Add the favicon made on https://gauger.io/fonticon/ -->
+			<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
 			{% if site.google_analytics and jekyll.environment == 'production'%}
 		  {% include analytics.html %}
 		  {% endif %}
@@ -19,19 +22,16 @@
 			<!-- End Google Tag Manager (noscript) -->
 			<div class="navbar">
 			  <a href="/">Home</a>
-			  <a href="/Research">Research</a>
+				<a href="/about">About me</a>
 			  <a href="/blog">Blog</a>
+				<a href="/Research">Research</a>
 				<a href="/links">Links</a>
 			</div>
 			<div class="row">
 			  <div class="side">
 			    <h1>Ming-Tso Wei (<span lang="cn">魏銘佐</span>)</h1>
-			    <h2>About Me</h2>
-			    <img src="/images/My_photo.jpg" alt="My_photo" width="320">
+			    <img src="/images/georgetown.jpeg" alt="georgetown" width="320">
 						{{site.description}}
-			<!--    <p>I am currently a postdoctoral researcher in
-			    <a href="https://groups.jqi.umd.edu/williams/">Prof. James Williams group</a>
-			     at Joint Quantum Institute, University of Maryland, College Park.</p> -->
 			    <h4>Contact information:</h4>
 							<!-- Load font awesome icons-->
 							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

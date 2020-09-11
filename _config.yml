@@ -6,10 +6,9 @@ url:                 'https://mingweii.github.io'
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Ming-Tso Wei
-email: mingtsoweii@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm an experimental condensed matter physicist.
-baseurl: "" # the subpath of your site, e.g. /blog
+  Standing on a honeycomb lattice and enjoying coffee at Georgetown Waterfront Park, Washington, DC, USA
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mingtweii
 github_username:  mingweii
