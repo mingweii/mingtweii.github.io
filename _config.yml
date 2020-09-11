@@ -21,7 +21,7 @@ markdown: kramdown
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
-
+  - jekyll-sitemap
 plugins_dir:
   - jekyll-paginate-v2
 
