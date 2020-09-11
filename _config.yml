@@ -1,5 +1,5 @@
-#theme: jekyll-theme-cayman
-url:                 'https://mingweii.github.io'
+theme: jekyll-theme-cayman
+url: 'https://mingweii.github.io'
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -7,11 +7,11 @@ url:                 'https://mingweii.github.io'
 # in the templates via {{ site.myvariable }}.
 title: Ming-Tso Wei
 description: >- # this means to ignore newlines until "baseurl:"
-  Standing on a honeycomb lattice and enjoying coffee at Georgetown Waterfront Park, Washington, DC, USA
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+  Standing on a honeycomb lattice and enjoying coffee at Georgetown Waterfront Park, Washington, DC, USA.
+baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mingtweii
-github_username:  mingweii
+#twitter_username: mingtweii
+#github_username:  mingweii
 google_analytics: UA-177608854-1
 
 
@@ -29,9 +29,9 @@ plugins_dir:
 # to override the default setting.
 exclude:
 #   - Gemfile
-   - Gemfile.lock
-   - node_modules
-   - vendor/bundle/
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
