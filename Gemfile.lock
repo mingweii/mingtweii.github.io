@@ -277,10 +277,10 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
+  jekyll (~> 3.9.0)
   jekyll-feed (~> 0.6)
   jekyll-paginate-v2
-  jekyll-theme-cayman
+  jekyll-theme-cayman (~> 0.1.1)
   kramdown
   nokogiri (>= 1.10.8)
   tzinfo-data
