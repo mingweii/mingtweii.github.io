@@ -11,7 +11,6 @@
 			{% if site.google_analytics and jekyll.environment == 'production'%}
 		  {% include analytics.html %}
 		  {% endif %}
-			<script data-ad-client="ca-pub-7956928456030985" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 			<title>{{ site.title }}</title>
 			<!-- link to main stylesheet -->
@@ -25,7 +24,7 @@
 			<div class="navbar">
 				{% assign sorted_pages = site.pages | sort:"order" %}
 				{% for my_page in sorted_pages %}
-					{% if my_page.title and my_page.autogen == nil and my_page.order!=-1%}
+					{% if my_page.title and my_page.autogen == nil and my_page.order>0%}
 					<a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
 					{% endif %}
 				{% endfor %}
