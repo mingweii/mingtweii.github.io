@@ -62,7 +62,7 @@ svg:not(:root) { overflow: hidden; }
 /* Grouping content ========================================================================== */
 /** Address margin not present in IE 8/9 and Safari. */
 figure {
-  margin: 1em 40px;
+  margin: 20px 20px; /*1em 40px;*/
   font-size: smaller;
  }
 
@@ -124,7 +124,8 @@ optgroup { font-weight: bold; }
 
 /* Tables ========================================================================== */
 /** Remove most spacing between table cells. */
-table { border-collapse: collapse; border-spacing: 0 10px; }
+table { border-collapse: separate; border-spacing: 0 10px; }
+
 
 td, th { padding: 0;}
 
@@ -350,16 +351,17 @@ p {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 25%;
+  flex: 15%;
+  flex-grow: 0;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Main column */
 .main {
-  flex: 75%;
+  flex: 80%;
   background-color: white;
-  padding: 20px;
+  padding: 18px;
 }
 
 /* Style the header */
@@ -383,7 +385,7 @@ p {
 /* Style the navigation bar links */
 .navbar a {
   float: left;
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 18px 30px;
