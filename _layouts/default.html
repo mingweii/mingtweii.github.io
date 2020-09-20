@@ -19,24 +19,7 @@
 
 		</head>
 		<body>
-			<!-- Scripts for collapsible 		-->
-			<script>
-		  var coll = document.getElementsByClassName("collapsible");
-		  var i;
 
-		  for (i = 0; i < coll.length; i++) {
-		    coll[i].addEventListener("click", function() {
-		      this.classList.toggle("active");
-		      var content = this.nextElementSibling;
-		      if (content.style.maxHeight){
-		        content.style.maxHeight = null;
-		      } else {
-		        content.style.maxHeight = content.scrollHeight + "px";
-		      }
-		    });
-		  }
-		  </script>
-						<!-- End of Scripts for collapsible 		-->
 			<div class="navbar">
 				{% assign sorted_pages = site.pages | sort:"order" %}
 				{% for my_page in sorted_pages %}
@@ -86,7 +69,24 @@
 					</div> -->
 			  </div>
 			</div>
+			<!-- Scripts for collapsible 		-->
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
 
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight){
+						content.style.maxHeight = null;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+					}
+				});
+			}
+			</script>
+						<!-- End of Scripts for collapsible 		-->
 
 			<footer>
 				<span class="site-footer-credits">This website was created by <a href="https://pages.github.com target="_blank"">GitHub Pages</a> and <a href="http://jekyllrb.com target="_blank"">Jekyll </a>
