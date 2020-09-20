@@ -61,7 +61,10 @@ svg:not(:root) { overflow: hidden; }
 
 /* Grouping content ========================================================================== */
 /** Address margin not present in IE 8/9 and Safari. */
-figure { margin: 1em 40px; }
+figure {
+  margin: 1em 40px;
+  font-size: smaller;
+ }
 
 /** Address differences between Firefox and other browsers. */
 hr { box-sizing: content-box; height: 0; }
@@ -75,7 +78,7 @@ code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
 /* Forms ========================================================================== */
 /** Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
 /** 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
-button, input, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */ }
+button, input, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */}
 
 /** Address `overflow` set to `hidden` in IE 8/9/10/11. */
 button { overflow: visible; }
@@ -121,9 +124,9 @@ optgroup { font-weight: bold; }
 
 /* Tables ========================================================================== */
 /** Remove most spacing between table cells. */
-table { border-collapse: collapse; border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0 10px; }
 
-td, th { padding: 0; }
+td, th { padding: 0;}
 
 .highlight table td { padding: 5px; }
 
@@ -383,8 +386,8 @@ p {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 36px;
-	font-size: 25px;
+  padding: 18px 30px;
+	font-size: 20px;
   text-decoration: none;
 }
 
@@ -411,4 +414,84 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+/* Dropdown menu */
+/*
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+.dropdown .dropbtn {
+  border: inherit;
+  color: inherit;
+  padding: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  outline: inherit;
+  background-color: inherit;
+  font-family: inherit;
+  margin: inherit;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+*/
+.collapsible {
+  background-color: inherit;/*#777;*/
+  color: inherit;/*white;*/
+  cursor: pointer;
+  /*padding: inherit;18px;*/
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  /*font-size: inherit; /*15px;*/
+}
+
+.active, .collapsible:hover {
+  background-color: inherit; /*#555;*/
+}
+
+.collapsible:after {
+  content: "[Collapse]";/*'\002B'; plus sign*/
+  color: #0066cc; /*inherit;/*white;*/
+  font-weight:  bold;
+  /*float: left;*/
+  margin-left: 0px;
+}
+
+.active:after {
+  content: "[Hide]"/*"\2212"; /* minus sign*/
+}
+
+.content {
+  /*padding: 0 18px;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: inherit; /*#f1f1f1;*/
 }
