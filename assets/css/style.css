@@ -516,3 +516,10 @@ ul.posts li {
   transition: max-height 0.2s ease-out;
   background-color: inherit; /*#f1f1f1;*/
 }
+iframe:focus{
+  outline: none;
+}
+iframe[seamless] {
+  display: block;
+  overflow: auto;
+}
