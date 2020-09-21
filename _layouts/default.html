@@ -6,7 +6,7 @@
 			{% include header.html %}
 			{% include head.html %}
 			<!-- Add the favicon made on https://gauger.io/fonticon/ -->
-			<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/images/favicon.ico">
+			<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 
 			{% if site.google_analytics and jekyll.environment == 'production'%}
 		  {% include analytics.html %}
@@ -57,42 +57,36 @@
 					<a href="https://twitter.com/MingTWeii" target="_blank"><i class="fa fa-twitter"></i> &nbsp;Twitter</a>
 				</p>
 							<figure>
-								<img src="{{site.baseurl}}/images/georgetown.jpg?2019091900000" alt="georgetown" width="290">
+								<img src="/images/georgetown.jpg?2019091900000" alt="georgetown" width="290">
   							<figcaption align="left">Standing on a honeycomb lattice and enjoying coffee
 								at Georgetown Waterfront Park, Washington, DC, USA.</figcaption>
 							</figure>
 				</div>
 			  <div class="main">
 					{{content}}
-					<!-- <div class="blurb" style="margin-left:2%; margin-right:2%;">
-
-					</div> -->
 			  </div>
 			</div>
-			<!-- Scripts for collapsible 		-->
-			<script>
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
-
-			for (i = 0; i < coll.length; i++) {
-				coll[i].addEventListener("click", function() {
-					this.classList.toggle("active");
-					var content = this.nextElementSibling;
-					if (content.style.maxHeight){
-						content.style.maxHeight = null;
-					} else {
-						content.style.maxHeight = content.scrollHeight + "px";
-					}
-				});
-			}
-			</script>
-						<!-- End of Scripts for collapsible 		-->
-
 			<footer>
-				<span class="site-footer-credits">This website was created by <a href="https://pages.github.com target="_blank"">GitHub Pages</a> and <a href="http://jekyllrb.com target="_blank"">Jekyll </a>
-						@ 2020<!-- <script>document.write( new Date().getFullYear());</script>.</span>  : document.write can slow the speed-->
-<!--
-				Website created by <a href="https://pages.github.com/" >Github Pages</a> and <a href="http://jekyllrb.com">Jekyll </a>@ <script>document.write( new Date().getFullYear());</script>
--->			</footer>
+				<span class="site-footer-credits">This website was created by <a href="https://pages.github.com" target="_blank">
+					GitHub Pages</a> and <a href="http://jekyllrb.com" target="_blank">Jekyll</a> @ 2020 </span><!-- <script>document.write( new Date().getFullYear());</script>.</span>  : document.write can slow the speed-->
+			</footer>
+<!-- Scripts for collapsible 		-->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+			content.style.maxHeight = null;
+		} else {
+			content.style.maxHeight = content.scrollHeight + "px";
+		}
+	});
+}
+</script>
+			<!-- End of Scripts for collapsible 		-->
 		</body>
 	</html>
