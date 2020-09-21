@@ -6,7 +6,7 @@
 			{% include header.html %}
 			{% include head.html %}
 			<!-- Add the favicon made on https://gauger.io/fonticon/ -->
-			<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+			<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/images/favicon.ico">
 
 			{% if site.google_analytics and jekyll.environment == 'production'%}
 		  {% include analytics.html %}
@@ -57,7 +57,7 @@
 					<a href="https://twitter.com/MingTWeii" target="_blank"><i class="fa fa-twitter"></i> &nbsp;Twitter</a>
 				</p>
 							<figure>
-								<img src="/images/georgetown.jpg?2019091900000" alt="georgetown" width="290">
+								<img src="{{site.baseurl}}/images/georgetown.jpg?2019091900000" alt="georgetown" width="290">
   							<figcaption align="left">Standing on a honeycomb lattice and enjoying coffee
 								at Georgetown Waterfront Park, Washington, DC, USA.</figcaption>
 							</figure>

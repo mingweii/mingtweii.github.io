@@ -344,24 +344,42 @@ p {
 
 /* Column container */
 .row {
-  display: flex;
-  flex-wrap: none;
+  display: inline-flex;
+
+  min-width: 62em;
+/*  flex: auto;
+  flex-flow: row wrap;
+  flex-direction: row;*/
+  flex-wrap: nowrap;
+  overflow: auto;
+  /*align-items: stretch;
+  justify-content: space-around;*/
+
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 15%;
-  /*flex-grow: 0;*/
+  /*flex: 28%;*/
+  flex: 0 0 22em;
   background-color: #f1f1f1;
   padding: 10px;
+  float: left;
+  overflow: auto;
+
+
 }
 
 /* Main column */
 .main {
-  flex: 80%;
+  /*flex: 72%;*/
+  flex: 72%;
+  min-width: 40em;
   background-color: white;
   padding: 18px;
+  float: left;
+  overflow: auto;
+
 }
 
 /* Style the header */
@@ -378,14 +396,15 @@ p {
 */
 /* Style the top navigation bar */
 .navbar {
-  overflow: hidden;
+  overflow: auto;
   background-color: #333;
+  min-width: 62em;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   float: left;
-  display: block;
+  /*display: block;*/
   color: white;
   text-align: center;
   padding: 18px 20px;
