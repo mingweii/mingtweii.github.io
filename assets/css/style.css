@@ -385,7 +385,7 @@ p {
 /* Style the navigation bar links */
 .navbar a {
   float: left;
-  display: inline-block;
+  display: block;
   color: white;
   text-align: center;
   padding: 18px 20px;
