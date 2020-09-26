@@ -511,7 +511,7 @@ ul.posts li {
 }
 
 .collapsible:after {
-  content: "[Collapse]";/*'\002B'; plus sign*/
+  content: "[Click to see more]";/*'\002B'; plus sign*/
   color: #0066cc; /*inherit;/*white;*/
   font-weight:  bold;
   /*float: left;*/
