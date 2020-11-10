@@ -361,21 +361,15 @@ p {
   display: inline-flex;
   min-width: 62em;
   min-height: 30em;
-/*  flex: auto;
-  flex-flow: row wrap;
-  */
   flex-wrap: nowrap;
   flex-direction: row;
   overflow: auto;
-  /*align-items: stretch;
-  justify-content: space-around;*/
   height: inherit;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  /*flex: 28%;*/
   flex: 0 0 22em;
   background-color: #f1f1f1;
   padding: 10px;
@@ -408,7 +402,6 @@ p {
 /* Style the navigation bar links */
 .navbar a {
   float: left;
-  /*display: block;*/
   color: white;
   text-align: center;
   padding: 18px 20px;

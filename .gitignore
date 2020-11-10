@@ -5,5 +5,4 @@ _site/
 
 .bundle/
 vendor/
-archive/
 node_modules/
