@@ -29,7 +29,8 @@ gem 'github-pages', group: :jekyll_plugins
 # end
 
 gem 'kramdown', '>= 2.3.0'
-gem 'nokogiri', '>=1.10.8'
+gem "nokogiri", ">= 1.11.0.rc4"
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
