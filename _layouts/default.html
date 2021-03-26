@@ -1,74 +1,85 @@
 <!DOCTYPE html>
 
 
-	<html>
-		<head>
-			{% include header.html %}
-			{% include head.html %}
-			<!-- Add the favicon made on https://gauger.io/fonticon/ -->
-			<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+<html>
 
-			{% if site.google_analytics and jekyll.environment == 'production'%}
-		  {% include analytics.html %}
-		  {% endif %}
+<head>
+	{% include header.html %}
+	{% include head.html %}
+	<!-- Add the favicon made on https://gauger.io/fonticon/ -->
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
-			<title>{{ site.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-			<!--<script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
-			<script src="https://kit.fontawesome.com/eb0230ced2.js" crossorigin="anonymous"></script>
+	{% if site.google_analytics and jekyll.environment == 'production'%}
+	{% include analytics.html %}
+	{% endif %}
 
-		</head>
-		<body>
-			<div class="navbar">
-				{% assign sorted_pages = site.pages | sort:"order" %}
-				{% for my_page in sorted_pages %}
-					{% if my_page.title and my_page.autogen == nil and my_page.order>0 %}
-					<a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-					{% endif %}
-				{% endfor %}
-			</div>
-				<div class="row">
-			  	<div class="side">
-			    	<h2>Ming-Tso Wei <span lang="cn">魏銘佐</span></h2>
-							<p><b>Post-Doctoral Researcher</b><br>
-								<i><a href="https://jqi.umd.edu/" target="_blank">Joint Quantum Institute</a></i>&nbsp;|&nbsp;
-						 		<i><a href="https://cnam.umd.edu/" target="_blank">Quantum Materials Center</a></i>&nbsp;|&nbsp;
-						 		<i><a href="https://umdphysics.umd.edu/" target="_blank">Department of Physics</a></i>, &nbsp;
-							<i>University of Maryland</i><br>
-							<!-- Load font awesome icons-->
-							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-							<!-- Load google scholar icons from academicons-->
-							<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-							<i class="fa fa-map-marker" style="color:#1e6bb8;"></i> &nbsp;<a href="/Contact">College Park, MD, USA</a><br>
-							<i class="fas fa-envelope" style="color:#1e6bb8;"></i> &nbsp;<a >mtwei[at]umd[dot]edu</a><br>
-							<i class="ai ai-google-scholar-square ai" style="color:#1e6bb8;"></i> &nbsp;<a href="https://scholar.google.com/citations?user=KKX8Ii8AAAAJ&hl=en" target="_blank">Google Scholar</a><br>
-							<i class="fa fa-linkedin" style="color:#1e6bb8;"></i> &nbsp;<a href="https://www.linkedin.com/in/mingweii/" target="_blank">LinkedIn</a>
-							</p>
-							<figure>
-								<img src="/images/georgetown.jpg?2019091900000" alt="georgetown" width="290px">
-								<figcaption> Standing on a honeycomb lattice and enjoying coffee
-									at Georgetown Waterfront Park, Washington, DC, USA.</figcaption>
-								</figure>
-					</div>
-			  	<div class="main">
-						{{content}}
-			  	</div>
-				</div>
-				<div class="footer">
-					<span class="site-footer-credits">This website was created by <a href="https://pages.github.com" target="_blank">
-					GitHub Pages</a> and <a href="http://jekyllrb.com" target="_blank">Jekyll</a> @ 2020 </span><!-- <script>document.write( new Date().getFullYear());</script>.</span>  : document.write can slow the speed-->
-				</div>
-				<!-- Scripts for collapsible 		-->
-				<script src="/assets/collapsible.js"></script>
-				<!-- Scripts for MathJax		-->
-				<script>
-				MathJax = {
-				  tex: {
-				    inlineMath: [['$', '$'], ['\\(', '\\)']]
-				  }
-				};
-				</script>
-				<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-		</body>
-	</html>
+	<title>{{ site.title }}</title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<!--<script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+	<script src="https://kit.fontawesome.com/eb0230ced2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div class="navbar">
+		{% assign sorted_pages = site.pages | sort:"order" %}
+		{% for my_page in sorted_pages %}
+		{% if my_page.title and my_page.autogen == nil and my_page.order>0 %}
+		<a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+		{% endif %}
+		{% endfor %}
+	</div>
+	<div class="row">
+		<div class="side">
+			<h2>Ming-Tso Wei <span lang="cn">魏銘佐</span></h2>
+			<p><b>Post-Doctoral Researcher</b><br>
+				<i><a href="https://jqi.umd.edu/" target="_blank">Joint Quantum Institute</a></i>&nbsp;|&nbsp;
+				<i><a href="https://cnam.umd.edu/" target="_blank">Quantum Materials Center</a></i>&nbsp;|&nbsp;
+				<i><a href="https://umdphysics.umd.edu/" target="_blank">Department of Physics</a></i>, &nbsp;
+				<i>University of Maryland</i><br>
+				<!-- Load font awesome icons-->
+				<link rel="stylesheet"
+					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<!-- Load google scholar icons from academicons-->
+				<link rel="stylesheet"
+					href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+				<i class="fa fa-map-marker" style="color:#1e6bb8;"></i> &nbsp;<a href="/Contact">College Park, MD,
+					USA</a><br>
+				<i class="fas fa-envelope" style="color:#1e6bb8;"></i> &nbsp;<a>mtwei[at]umd[dot]edu</a><br>
+				<i class="ai ai-google-scholar-square ai" style="color:#1e6bb8;"></i> &nbsp;<a
+					href="https://scholar.google.com/citations?user=KKX8Ii8AAAAJ&hl=en" target="_blank">Google
+					Scholar</a><br>
+				<i class="fa fa-linkedin" style="color:#1e6bb8;"></i> &nbsp;<a
+					href="https://www.linkedin.com/in/mingweii/" target="_blank">LinkedIn</a>
+			</p>
+			<figure>
+				<img src="/images/georgetown.jpg?2019091900000" alt="georgetown" width="290px">
+				<figcaption> Standing on a honeycomb lattice and enjoying coffee
+					at Georgetown Waterfront Park, Washington, DC, USA.</figcaption>
+			</figure>
+		</div>
+		<div class="main">
+			{{content}}
+		</div>
+	</div>
+	<div class="footer">
+		<span class="site-footer-credits">This website was created by <a href="https://pages.github.com"
+				target="_blank">
+				GitHub Pages</a> and <a href="http://jekyllrb.com" target="_blank">Jekyll</a> @ 2020 </span>
+		<!-- <script>document.write( new Date().getFullYear());</script>.</span>  : document.write can slow the speed-->
+	</div>
+	<!-- Scripts for collapsible 		-->
+	<script src="/assets/collapsible.js"></script>
+	<!-- Scripts for MathJax		-->
+	<script>
+		MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']]
+			}
+		};
+	</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+
+</html>
