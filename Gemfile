@@ -13,7 +13,7 @@ source 'https://rubygems.org'
 # gem 'jekyll', '~> 3.9.0'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem 'jekyll-theme-cayman', '~> 0.1.1'
+#gem 'jekyll-theme-cayman', '~> 0.1.1'
 gem 'json', '>= 2.3.0'
 
 gem 'activesupport', '>= 4.1.11'
@@ -31,7 +31,7 @@ gem 'github-pages', group: :jekyll_plugins
 gem 'kramdown', '>= 2.3.0'
 gem "nokogiri", ">= 1.13.6"
 gem "addressable", ">= 2.8.0"
-gem "commonmarker","~>0.17.6"
+gem "commonmarker",">= 0.23.4"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
